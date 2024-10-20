@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+    <link rel ='stylesheet' href="../public/style.css">
+</head>
+<body>
+    <div id="passcode">Passcode</div>
+    Players
+    <div id="playerTable">
+        <div class="player">
+            Player1
+        </div>
+        <div class="player">
+            Player2
+        </div>
+    </div>
+    <div id ="cardSelector" class="hidden">
+        <!-- <div class="card" id="Seer">
+            <div class="cardTop">Seer</div>
+            <div class="cardMiddle">
+                <img src="../images/seer.jpg">
+            </div>
+            <div class="cardBottom">Here is the card description. Look at card hehehe</div>
+        </div> -->
+    </div>
+    <div class="menu">
+        <button id="startButton">START GAME</button>
+        <button id="leaveGame">LEAVE GAME</button>
+        <button id="seeCards" onclick="displayCards()">Cards</button>
+    </div>
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src = "../public/scripts/host.js"></script>
+</body>
+</html>

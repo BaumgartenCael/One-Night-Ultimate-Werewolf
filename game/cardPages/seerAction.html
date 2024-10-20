@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+    <link rel ='stylesheet' href="../../public/style.css">
+</head>
+<body>
+    <div id="seerChoose">
+        <button onclick="revealTable()">Look at a player's card</button>
+        <button onclick="revealMiddle()">Look at two cards in the middle</button>
+    </div>
+    <div class="hidden" id="viewMiddle">
+        Choose two cards to view from the middle
+        <div id="middle"> 
+            <!-- <div class="card" id="Seer">
+            <div class="cardTop">Seer</div>
+            <div class="cardMiddle">
+                <img src="../images/seer.jpg">
+            </div>
+            <div class="cardBottom">Here is the card description. Look at card hehehe</div>
+            </div>
+            <div class="card" id="Seer">
+                <div class="cardTop">Seer</div>
+                <div class="cardMiddle">
+                    <img src="../images/seer.jpg">
+                </div>
+                <div class="cardBottom">Here is the card description. Look at card hehehe</div>
+                </div>
+                <div class="card" id="Seer">
+                    <div class="cardTop">Seer</div>
+                    <div class="cardMiddle">
+                        <img src="../images/seer.jpg">
+                    </div>
+                    <div class="cardBottom">Here is the card description. Look at card hehehe</div>
+                    </div> -->
+        </div>
+    </div>
+    <div class="hidden" id ="viewPlayer">
+         Choose a player's card to view
+        <div id="playerTable">
+            player1
+            player2
+        </div>
+    </div>
+    <button class ="hidden" id="submitButton">
+        Submit
+    </button>
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src = "../../public/scripts/cardActions/seer.js"></script>
+</body>
+</html>

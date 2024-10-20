@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+    <link rel ='stylesheet' href="../../public/style.css">
+</head>
+<body>
+    You are the only werewolf
+    Choose a card to view from the middle
+    <div class='hidden' id='middle'>
+        <!-- Three cards will be added to this, one will be flipped -->
+    </div>
+    <div class='hidden' id='nameReveal'>
+        Your werewolf teammate is...
+        <!-- The other werewolf player's name will be revealed here -->
+    </div>
+    <button class="hidden" id="submitButton">
+        Submit
+    </button>
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src = "../../public/scripts/cardActions/werewolf.js"></script>
+</body>
+</html>
