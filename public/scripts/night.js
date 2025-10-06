@@ -20,20 +20,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
     })
     socket.on('takeAction', (player) => {
         console.log("Received takeAction from server");
-        window.location.href='../../game/cardPages/drunkAction.html';
-        // if (player.tempCard.name === 'Werewolf') {
-        //     window.location.href='../../game/cardPages/werewolfAction.html';
-        // } else if (player.tempCard.name === 'Seer') {
-        //     window.location.href='../../game/cardPages/seerAction.html';
-        // } else if (player.tempCard.name === 'Robber') {
-        //     window.location.href='../../game/cardPages/robberAction.html';
-        // } else if (player.tempCard.name === 'Troublemaker') {
-        //     window.location.href='../../game/cardPages/troublemakerAction.html';
-        // } else if (player.tempCard.name === 'Drunk') {
-        //     window.location.href='../../game/cardPages/drunkAction.html';
-        // } else if (player.tempCard.name === 'Insomniac') {
-        //     window.location.href='../../game/cardPages/insomniacAction.html';
-        // }
+        // window.location.href='../../game/cardPages/drunkAction.html';
+        if (player.tempCard.name === 'Werewolf') {
+            window.location.href='../../game/cardPages/werewolfAction.html';
+        } else if (player.tempCard.name === 'Seer') {
+            window.location.href='../../game/cardPages/seerAction.html';
+        } else if (player.tempCard.name === 'Robber') {
+            window.location.href='../../game/cardPages/robberAction.html';
+        } else if (player.tempCard.name === 'Troublemaker') {
+            window.location.href='../../game/cardPages/troublemakerAction.html';
+        } else if (player.tempCard.name === 'Drunk') {
+            window.location.href='../../game/cardPages/drunkAction.html';
+        } else if (player.tempCard.name === 'Insomniac') {
+            window.location.href='../../game/cardPages/insomniacAction.html';
+        }
         
     });
 
